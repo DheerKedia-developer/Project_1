@@ -1,0 +1,91 @@
+@keyframes Typing {
+    from {
+        width : 0px;
+    } to {
+        width : 200px;
+    }
+}
+@keyframes SlideInTop {
+    from {
+        transform: translateY(-150px);
+    } to {
+        transform: translateY(0px);
+    }
+}
+@keyframes SlideInBottom {
+    from {
+        transform: translateY(+150px);
+    } to {
+        transform: translateY(0px);
+    }
+}
+@keyframes InfinteLoop_1 {
+    from {
+        transform: translateX(-800px);
+    } to {
+        transform: translateX(0px);
+    }
+}
+@keyframes InfinteLoop_2 {
+    from {
+        transform: translateX(-800px);
+    } to {
+        transform: translateX(0px);
+    }
+}
+@keyframes InfinteLoop_3 {
+    from {
+        transform: translateX(-800px);
+    } to {
+        transform: translateX(0px);
+    }
+}
+
+.footer,.handles,.transition {
+    animation-name: SlideInBottom;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.header {
+    animation-name: Typing;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(70);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.links {
+    animation-name: SlideInTop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.transition {
+    transition-property: transfom;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+a.transition:hover {
+    transform: translate(0,-10px);
+}
+.InfiniteLoop_1, .InfiniteLoop_2, .InfiniteLoop_3 {
+    animation-name: InfinteLoop_1;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+#reveal:hover {
+    background-color:rgb(47, 107, 204);
+    color: white;
+}
